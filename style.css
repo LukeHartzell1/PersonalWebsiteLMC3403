@@ -1950,5 +1950,81 @@
   ::-webkit-scrollbar-thumb:hover {
     background: var(--gradient-primary);
   }
+
+/*--------------------------------------------------------------
+# Resume Section
+--------------------------------------------------------------*/
+.resume-container {
+  background: rgba(15, 23, 42, 0.8);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid rgba(110, 87, 224, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transition: var(--transition);
+}
+
+.resume-container:hover {
+  border-color: rgba(110, 87, 224, 0.4);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+.resume-preview {
+  text-align: center;
+}
+
+.resume-header {
+  margin-bottom: 2rem;
+}
+
+.resume-header h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.resume-header p {
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.resume-viewer {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(110, 87, 224, 0.2);
+  transition: var(--transition);
+}
+
+.resume-viewer:hover {
+  border-color: rgba(110, 87, 224, 0.4);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+}
+
+.resume-viewer embed {
+  border-radius: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 1.5rem;
+  }
+  
+  .resume-header h3 {
+    font-size: 1.5rem;
+  }
+  
+  .resume-viewer embed {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-viewer embed {
+    height: 300px;
+  }
+}
   
   
